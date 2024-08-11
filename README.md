@@ -5,18 +5,21 @@ This is a bash-based command-line interface (CLI) tool that allows users to quic
 ## Prerequisites
 Before using the CLI Cloud Upload Tool, ensure you have the following prerequisites installed on your system:
 
-Bash (version 4.0 or later)
-cURL (for making HTTP requests)
-jq (for parsing JSON responses)
-Cloud storage account (e.g., AWS S3, Google Cloud Storage, Azure Blob Storage)
-API keys or credentials for the cloud storage service
+- Bash
+
+- Download and configure the AWS CLI (Amazon Web Service Command Line Interface)
+
+- Cloud storage account (e.g., AWS S3)
+
+- API keys or credentials for the cloud storage service
 
 ## Installation
 1. Clone the Github Repo.
 
 `
-git clone https://github.com/yourusername/cloud-upload-tool.git
-cd cloud-upload-tool
+git clone https://github.com/Stefanie-A/cloudDrop.git
+
+cd cloudDrop
 `
 
 2. Make the script executable:
@@ -25,7 +28,7 @@ cd cloud-upload-tool
 `
 
 3. Configuration
-Set up your cloud storage credentials: 
+Set up your AWS credentials: 
 Create a .env file in the root directory of the project.
 Add your cloud storage credentials and configuration details to the .env file. Example for AWS S3:
 `
