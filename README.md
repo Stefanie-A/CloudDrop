@@ -17,8 +17,7 @@ Before using the CLI Cloud Upload Tool, ensure you have the following prerequisi
 1. Clone the Github Repo.
 
 `
-git clone https://github.com/Stefanie-A/cloudDrop.git
-
+git clone https://github.com/Stefanie-A/CloudDrop.git
 cd cloudDrop
 `
 
@@ -31,14 +30,16 @@ cd cloudDrop
 Set up your AWS credentials: 
 Create a .env file in the root directory of the project.
 Add your cloud storage credentials and configuration details to the .env file. Example for AWS S3:
-`
-AWS_ACCESS_KEY_ID=your_access_key_id
-AWS_SECRET_ACCESS_KEY=your_secret_access_key
-S3_BUCKET_NAME=your_bucket_name
-S3_REGION=your_region
-`
 
-Load the environment variables:
+` AWS_ACCESS_KEY_ID=your_access_key_id `
+
+` AWS_SECRET_ACCESS_KEY=your_secret_access_key `
+
+` S3_BUCKET_NAME=your_bucket_name `
+
+` S3_REGION=your_region `
+
+load the environment variables:
 
 `
 source .env
