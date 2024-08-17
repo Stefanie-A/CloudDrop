@@ -48,13 +48,13 @@ Usage Examples
 Upload a single file:
 
 `
-./upload.sh /path/to/file.txt
+./upload.sh /path/to/file.txt <bucket_name>
 `
 
 Upload multiple files:
 
 `
-./upload.sh /path/to/file1.txt /path/to/file2.jpg /path/to/file3.pdf
+./upload.sh /path/to/file1.txt /path/to/file2.jpg /path/to/file3.pdf <bucket_name>
 `
 <!-- Specify a custom destination path in the cloud storage:
 
@@ -75,8 +75,7 @@ Run the script with elevated privileges if required: sudo ./upload.sh.
 
 ### Issue: "Invalid credentials" or "Access denied"
 ### Solution:
-Verify that your cloud storage credentials are correctly set in the .env file.
-Ensure the .env file is properly loaded: source .env.
+Verify that your AWS credentials configured.
 
 ### Issue: "File not found" or "No such file or directory"
 ### Solution:
